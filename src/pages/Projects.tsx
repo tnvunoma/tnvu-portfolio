@@ -4,7 +4,7 @@ import styles from "./Projects.module.css";
 interface Project {
   id: number;
   title: string;
-  media: string; 
+  media: string;
   description: string;
   github: string;
   contributors: string[];
@@ -24,7 +24,7 @@ const Projects = () => {
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.05 }
     );
 
     sectionsRef.current.forEach((section) => {
@@ -53,6 +53,56 @@ const Projects = () => {
         "A statistical modeling project in R and RStan that builds and evaluates probabilistic mixture models for automated, reproducible workflows.",
       github: "https://github.com/tnvunoma/Links-Mixture-Modeling",
       contributors: ["Roee Gutman", "Morgane Pizigo", "Noma Vu"],
+      isVideo: false,
+    },
+    {
+      id: 3,
+      title: "Bilinear Warp Mesh",
+      media: "/images/placeholder.png",
+      description:
+        "An independent project for Dash that implements a 2D image editing tool for making non-affine transformations using custom shaders.",
+      github: "",
+      contributors: ["Noma Vu"],
+      isVideo: true,
+    },
+    {
+      id: 4,
+      title: "3D Voxel Representations for Legos",
+      media: "/images/placeholder.png",
+      description:
+        "An image processing and 3D representation algorithm that uses Computer Vision techniques and the Voxel Rendering pipeline to turn 2D image inputs into 3D lego builds.",
+      github: "",
+      contributors: ["Noma Vu"],
+      isVideo: true,
+    },
+    // {
+    //   id: 5,
+    //   title: "Homewreckers",
+    //   media: "/images/placeholder.png",
+    //   description:
+    //     "A multiplayer 2D game built using Unity, featuring a homewrecking cat and a cat-chasing dog.",
+    //   github: "https://github.com/BrownRISDGameDevelopers/furry-homewreckers",
+    //   contributors: ["Brown RISD Game Developers"],
+    //   isVideo: false,
+    // },
+    {
+      id: 6,
+      title: "Pizzeria Mini Game",
+      media: "/images/indy_game.png",
+      description:
+        "A Java mini game of a chef who can take customer orders, make, cut, and serve pizza, featuring RNG-based logic and difficulty progression.",
+      github: "https://github.com/tnvunoma/pizzeria-mini-game",
+      contributors: ["Noma Vu"],
+      isVideo: false,
+    },
+        {
+      id: 7,
+      title: "This Website!",
+      media: "/images/website_img.png",
+      description:
+        "A React + Typescript + CSS portfolio website.",
+      github: "https://github.com/tnvunoma/tnvu-portfolio",
+      contributors: ["Noma Vu"],
       isVideo: false,
     },
   ];
@@ -90,14 +140,18 @@ const Projects = () => {
               <div className={styles.info}>
                 <h3>{proj.title}</h3>
                 <p>{proj.description}</p>
-                <a
-                  href={proj.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.link}
-                >
-                  View on GitHub →
-                </a>
+
+                {proj.github && (
+                  <a
+                    href={proj.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.link}
+                  >
+                    View on GitHub →
+                  </a>
+                )}
+
                 <p className={styles.contributors}>
                   <strong>Contributors:</strong> {proj.contributors.join(", ")}
                 </p>

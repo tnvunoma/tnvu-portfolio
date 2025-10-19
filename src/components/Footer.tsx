@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
-        <p>© {new Date().getFullYear()} Noma Vu | made with React</p>
+        <p>© {new Date().getFullYear()} made with React</p>
         <div className={styles.contact}>
           <a href="mailto:thu_vu@brown.edu"> ๋࣭ ⭑💻‧₊˚ thu_vu@brown.edu</a>
           <span> | </span>
