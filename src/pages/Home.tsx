@@ -54,7 +54,7 @@ const Home = () => {
         </div>
 
         <div className={styles.imageGallery}>
-          <img src="images/noma_frog.jpg" alt="Computer Science Work" />
+          <img src="/images/noma_frog.jpg" alt="Computer Science Work" />
         </div>
       </section>
 
@@ -66,7 +66,7 @@ const Home = () => {
         className={`${styles.island} ${styles.island2} ${styles.slideRight}`}
       >
         <div className={styles.imageGallery}>
-          <img src="images/art0.jpg" alt="Art Preview" />
+          <img src="/images/art0.jpg" alt="Art Preview" />
         </div>
 
         <div className={styles.text}>
@@ -115,7 +115,7 @@ const Home = () => {
         </div>
 
         <div className={styles.imageGallery}>
-          <img src="images/noma_liondance.png" alt="Music and Performance" />
+          <img src="/images/noma_liondance.png" alt="Music and Performance" />
         </div>
       </section>
     </div>
