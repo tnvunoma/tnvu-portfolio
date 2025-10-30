@@ -29,18 +29,24 @@ const Home = () => {
     <div className={styles.homeContainer}>
       {/* --- Section 1 --- */}
       <section
-        ref={(el) => { islandsRef.current[0] = el }}
+        ref={(el) => {
+          islandsRef.current[0] = el;
+        }}
         className={`${styles.island} ${styles.island1} ${styles.slideLeft}`}
       >
         <div className={styles.text}>
           <h1>Hi, I'm Noma! ܁ ˖ ‧₊˚⊹</h1>
           <p>
             I'm a junior at Brown University, concentrating in Computer Science
-            (Sc.B.) with a focus on graphics and visual computing. My
-            appreciation for both aesthetics and practicality has drawn me to
-            the intersection of art and technology, where I aim to pursue
-            innovative ideas driven by passion and problem-solving. I hope my
-            journey continues to spark meaningful insights and impactful change.
+            (Sc.B.) with an interest in visual computing, especially real-time
+            rendering and graphics systems. I'm passionate about the
+            intersection of art and technology and aim to design systems that
+            value both technical efficiency and artistic intent. My current
+            focus is on understanding low-level graphics pipelines, GPU
+            architectures, and rendering algorithms through implementing
+            real-time shaders, exploring rendering architectures, and creating
+            visual simulations. I hope my journey continues to spark meaningful
+            insights and impactful change.
           </p>
           <p className={styles.linkText}>
             <Link to="/projects">Learn more about my CS work →</Link>
@@ -54,7 +60,9 @@ const Home = () => {
 
       {/* --- Section 2 --- */}
       <section
-        ref={(el) => { islandsRef.current[1] = el; }}
+        ref={(el) => {
+          islandsRef.current[1] = el;
+        }}
         className={`${styles.island} ${styles.island2} ${styles.slideRight}`}
       >
         <div className={styles.imageGallery}>
@@ -84,21 +92,25 @@ const Home = () => {
 
       {/* --- Section 3 --- */}
       <section
-        ref={(el) => { islandsRef.current[2] = el; }}
+        ref={(el) => {
+          islandsRef.current[2] = el;
+        }}
         className={`${styles.island} ${styles.island3} ${styles.slideLeft}`}
       >
         <div className={styles.text}>
           <h2> Extracurriculars </h2>
           <p>
-            To maintain a work-life balance, I enjoy many extracurriculars
-            centered around music and performance. The time I spend exploring
-            these creative, collaborative spaces helps me appreciate the moments
-            I spend away from the screen.
+            To maintain a healthy balance between work and creativity, I take
+            part in extracurriculars both within and outside of programming.
+            From collaborative game development projects with artists to music
+            and performance groups, my involvement in these experiences let me
+            explore teamwork and creativity beyond the screen.
           </p>
           <p>
-            <strong> My teams: </strong> <br />
-             Brown Lion Dance 舞獅 <br />
-             Brown Hansori 한소리
+            <strong> Clubs & Organizations: </strong> <br />
+            Brown Lion Dance 舞獅 <br />
+            Brown Hansori 한소리 <br />
+            Brown RISD Game Developers
           </p>
         </div>
 

@@ -58,23 +58,24 @@ const Projects = () => {
     {
       id: 3,
       title: "Bilinear Warp Mesh",
-      media: "/images/placeholder.png",
+      media: "/images/bilinear_warp_demo.mp4",
       description:
         "An independent project for Dash that implements a 2D image editing tool for making non-affine transformations using custom shaders.",
       github: "",
       contributors: ["Noma Vu"],
       isVideo: true,
     },
-    {
-      id: 4,
-      title: "3D Voxel Representations for Legos",
-      media: "/images/placeholder.png",
-      description:
-        "An image processing and 3D representation algorithm that uses Computer Vision techniques and the Voxel Rendering pipeline to turn 2D image inputs into 3D lego builds.",
-      github: "",
-      contributors: ["Noma Vu"],
-      isVideo: true,
-    },
+    // Projects in progress
+    // {
+    //   id: 4,
+    //   title: "3D Voxel Representations for Legos",
+    //   media: "/images/placeholder.png",
+    //   description:
+    //     "An image processing and 3D representation algorithm that uses Computer Vision techniques and the Voxel Rendering pipeline to turn 2D image inputs into 3D lego builds.",
+    //   github: "https://github.com/tnvunoma/3D-Legos-Voxel-Modelling",
+    //   contributors: ["Noma Vu"],
+    //   isVideo: true,
+    // },
     // {
     //   id: 5,
     //   title: "Homewreckers",
