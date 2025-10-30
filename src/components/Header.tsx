@@ -4,12 +4,12 @@ import styles from "./Header.module.css";
 
 const Header = () => {
   const location = useLocation();
-  const [currentImage, setCurrentImage] = useState("/images/cs_banner.jpg");
+  const [currentImage, setCurrentImage] = useState("images/cs_banner.jpg");
 
   useEffect(() => {
-    let newImage = "/images/noma3.jpg";
-    if (location.pathname === "/art") newImage = "/images/art_banner.png";
-    else if (location.pathname === "/projects") newImage = "/images/cs_banner.jpg";
+    let newImage = "images/noma3.jpg";
+    if (location.pathname === "/art") newImage = "images/art_banner.png";
+    else if (location.pathname === "/projects") newImage = "images/cs_banner.jpg";
 
     setCurrentImage(newImage);
   }, [location.pathname]);

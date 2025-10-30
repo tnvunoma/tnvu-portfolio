@@ -36,7 +36,7 @@ const Art = () => {
     {
       id: 1,
       title: "#01",
-      image: "/images/art5.jpg",
+      image: "images/art5.jpg",
       description:
         "A simple but effective character piece focusing on contrast and mood.",
       highlight: false,
@@ -44,7 +44,7 @@ const Art = () => {
     {
       id: 2,
       title: "#02",
-      image: "/images/art6.jpg",
+      image: "images/art6.jpg",
       description:
         "Through high-key colors and light flares, this character-focused illustration presents a sophisticated, ethereal appeal.",
       highlight: false,
@@ -52,7 +52,7 @@ const Art = () => {
     {
       id: 3,
       title: "#03",
-      image: "/images/art3.jpg",
+      image: "images/art3.jpg",
       description:
         "Vibrant and lively, this piece romanticizes the fresh vigor of youth.",
       highlight: true,
@@ -60,7 +60,7 @@ const Art = () => {
     {
       id: 4,
       title: "#04",
-      image: "/images/art4.jpg",
+      image: "images/art4.jpg",
       description:
         "Capturing feelings of a nostalgic romance, this wide shot encapsulates a faraway memory.",
       highlight: false,
@@ -69,14 +69,14 @@ const Art = () => {
     {
       id: 5,
       title: "#05",
-      image: "/images/art2.png",
+      image: "images/art2.png",
       description: "Experimenting with a unique palette.",
       highlight: false,
     },
     {
       id: 6,
       title: "#06",
-      image: "/images/sketch4.jpg",
+      image: "images/sketch4.jpg",
       description: "Stylized character headshots.",
       highlight: true,
     },
@@ -86,7 +86,7 @@ const Art = () => {
     {
       id: 9,
       title: "Flow",
-      image: "/images/animation.mov",
+      image: "images/animation.mov",
       description:
         "Character animation to express an appreciation for the mundane moments.",
       highlight: true,
